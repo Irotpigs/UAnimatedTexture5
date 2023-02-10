@@ -90,6 +90,7 @@ public:	// UTexture Interface
 
 	virtual FTextureResource* CreateResource() override;
 	virtual EMaterialValueType GetMaterialType() const override { return MCT_Texture2D; }
+	virtual ETextureClass GetTextureClass() const override { return ETextureClass::TwoD;  }
 
 public:	// FTickableGameObject Interface
 	virtual void Tick(float DeltaTime) override;
